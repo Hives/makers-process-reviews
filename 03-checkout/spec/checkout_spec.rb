@@ -31,5 +31,9 @@ describe 'checkout' do
     it 'returns 30 when passed "B"' do
       expect(checkout('B')).to eq(30)
     end
+
+    it 'returns 45 when passed "BB"' do
+      expect(checkout('BB')).to eq(45)
+    end
   end
 end
