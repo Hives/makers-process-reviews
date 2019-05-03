@@ -1,7 +1,7 @@
 require 'checkout'
 
 describe 'checkout' do
-  context 'lots of "A"s' do
+  context 'just "A"s' do
     it 'returns 50 when passed "A"' do
       expect(checkout('A')).to eq(50)
     end
@@ -27,7 +27,7 @@ describe 'checkout' do
     end
   end
 
-  context 'lots of "B"s' do
+  context 'just "B"s' do
     it 'returns 30 when passed "B"' do
       expect(checkout('B')).to eq(30)
     end
@@ -42,6 +42,16 @@ describe 'checkout' do
 
     it 'returns 90 when passed "BBBB"' do
       expect(checkout('BBBB')).to eq(90)
+    end
+  end
+
+  context 'just "C"s' do
+    it 'returns 20 when passed "C"' do
+      expect(checkout('C')).to eq(20)
+    end
+
+    it 'returns 40 when passed "CC"' do
+      expect(checkout('CC')).to eq(40)
     end
   end
 end
