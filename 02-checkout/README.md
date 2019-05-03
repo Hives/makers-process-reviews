@@ -8,9 +8,9 @@ I did the [checkout exercise](https://github.com/makersacademy/skills-workshops/
 
 ## My reflection
 
-- Didn't finish the exercise! I felt like I got stuck writing and passing tests that weren't getting me closer to a solution. Do I need to think more about writing tests which are going to drive me in the right direction?
+- Didn't finish the exercise! I felt like I got stuck writing and passing tests that weren't getting me closer to a solution. Do I need to think more about writing tests which are going to drive me in the right direction? Ask the coaches about this.
 - I hardly ever refactored! Maybe that would be a way where I could pull patterns out of the code which would push me in the right direction? E.g. I had four one line if clauses adding on different scores for different letters - if I'd refactored this into a select/case statement that might have been more useful in getting me towards a good solution?
-- Hardly ever refactoring has got me in trouble before... e.g. on Rock Paper Scissors weekend challenge I got so into 'write a test, pass a test' that I left refactoring for a long time, leaving me with a mountain of complex refactoring, where all my tests were breaking. I need to slow down and make more of the refactoring process, as it's obviously very important in terms of organising your code.
+- Hardly ever refactoring has got me in trouble before... e.g. on Rock Paper Scissors weekend challenge I got so into 'write a test, pass a test' that I left refactoring for a long time, leaving me with a mountain of complex refactoring, where all my tests were breaking. I did much better on this weekend's Chitter Challenge, but I got carried away during this process review and forgot my process... I need to slow down and make more of the refactoring process, as it's obviously very important in terms of organising your code.
 - I did no commits AT ALL! 😱
 
 ## Matt's feedback:
