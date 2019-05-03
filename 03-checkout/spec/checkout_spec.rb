@@ -58,6 +58,14 @@ describe 'checkout' do
       expect(checkout('aBc')).to eq(-1)
     end
 
+    it 'returns -1 when passed "-B8x"' do
+      expect(checkout('-B8x')).to eq(-1)
+    end
+
+    it 'returns -1 when passed 18' do
+      expect(checkout(18)).to eq(-1)
+    end
+
     it 'returns 100 when passed "AA"' do
       expect(checkout('AA')).to eq(100)
     end
