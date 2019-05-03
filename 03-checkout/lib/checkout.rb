@@ -4,11 +4,9 @@ def checkout(basket)
 
   price = 50 * a_count
   discount = (a_count/3) * 20
-  price -= discount
 
   price += 30 * b_count
-  discount = (b_count/2) * 15
-  price -= discount
+  discount += (b_count/2) * 15
 
-  price
+  price - discount
 end
