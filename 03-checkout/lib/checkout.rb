@@ -1,3 +1,7 @@
 def checkout(basket)
-  50 * basket.length
+  price = 50 * basket.length
+  if basket.length > 2
+    price -= 20
+  end
+  price
 end

@@ -8,4 +8,8 @@ describe 'checkout' do
   it 'returns 100 when passed "AA"' do
     expect(checkout('AA')).to eq(100)
   end
+
+  it 'returns 130 when passed "AAA"' do
+    expect(checkout('AAA')).to eq(130)
+  end
 end
