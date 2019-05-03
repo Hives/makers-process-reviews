@@ -2,7 +2,7 @@
 *Date: Fri 3 May 2019*  
 *Reviewer: Just me myself and I*  
 
-Video: <https://www.youtube.com/watch?v=Y0_pXes01FA>
+Did a video. Couldn't upload it to YouTube as it's too long. It's in my ~/Documents.
 
 I did the [checkout exercise](https://github.com/makersacademy/skills-workshops/tree/master/process_review/exercises/checkout) again
 
