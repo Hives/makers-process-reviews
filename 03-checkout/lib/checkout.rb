@@ -1,4 +1,5 @@
 def checkout(basket)
+  return -1 if basket != basket.upcase
   a_count = basket.count("A")
   b_count = basket.count("B")
   c_count = basket.count("C")

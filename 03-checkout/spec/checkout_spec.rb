@@ -54,6 +54,10 @@ describe 'checkout' do
   end
 
   context 'acceptance tests' do
+    it 'returns -1 when passed "aBc"' do
+      expect(checkout('aBc')).to eq(-1)
+    end
+
     it 'returns 100 when passed "AA"' do
       expect(checkout('AA')).to eq(100)
     end
