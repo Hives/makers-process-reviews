@@ -16,4 +16,4 @@ I did the [checkout exercise](https://github.com/makersacademy/skills-workshops/
   1. I wrote it before writing the test!!! (Again I realised and deleted it before committing so I could pretend it was a spike, but....)
   2. It was way too complicated. I could have written something much simpler to pass the test. In fact I deleted it, and I wrote something much simpler.
 - Was some good refactoring opportunity left over, but I ran out of time.
-
+- Also the guard clauses I wrote pass the acceptance tests, but obviously don't cover all invalid strings. Is that a problem? Or is it OK just to pass the acceptance tests?
