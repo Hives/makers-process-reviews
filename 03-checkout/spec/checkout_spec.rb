@@ -6,10 +6,6 @@ describe 'checkout' do
       expect(checkout('A')).to eq(50)
     end
 
-    it 'returns 100 when passed "AA"' do
-      expect(checkout('AA')).to eq(100)
-    end
-
     it 'returns 130 when passed "AAA"' do
       expect(checkout('AAA')).to eq(130)
     end
@@ -62,6 +58,16 @@ describe 'checkout' do
 
     it 'returns 30 when passed "DD"' do
       expect(checkout('DD')).to eq(30)
+    end
+  end
+
+  context 'acceptance tests' do
+    it 'returns 100 when passed "AA"' do
+      expect(checkout('AA')).to eq(100)
+    end
+
+    it 'returns 115 when passed "ABCD"' do
+      expect(checkout('ABCD')).to eq(115)
     end
   end
 end
