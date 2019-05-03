@@ -1,3 +1,3 @@
 def checkout(basket)
-  50
+  50 * basket.length
 end
