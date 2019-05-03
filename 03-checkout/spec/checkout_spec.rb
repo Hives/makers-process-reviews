@@ -12,4 +12,16 @@ describe 'checkout' do
   it 'returns 130 when passed "AAA"' do
     expect(checkout('AAA')).to eq(130)
   end
+
+  it 'returns 180 when passed "AAAA"' do
+    expect(checkout('AAAA')).to eq(180)
+  end
+
+  it 'returns 230 when passed "AAAAA"' do
+    expect(checkout('AAAAA')).to eq(230)
+  end
+
+  it 'returns 260 when passed "AAAAAA"' do
+    expect(checkout('AAAAAA')).to eq(260)
+  end
 end
