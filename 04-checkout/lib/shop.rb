@@ -4,7 +4,8 @@ class Shop
       discount = 20 * (items.length/3)
       50 * items.length - discount
     else
-      30
+      discount = 15 * (items.length/2)
+      30 * items.length - discount
     end
   end
 end

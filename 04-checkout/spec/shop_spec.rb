@@ -29,5 +29,9 @@ describe Shop do
     it 'returns 30 when passed "B"' do
       expect(shop.checkout('B')).to eq 30
     end
+
+    it 'returns 45 when passed "BB"' do
+      expect(shop.checkout('BB')).to eq 45
+    end
   end
 end
