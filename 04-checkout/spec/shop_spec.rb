@@ -24,4 +24,10 @@ describe Shop do
       expect(shop.checkout('AAAAAA')).to eq 260
     end
   end
+
+  context 'Lots of "B"s' do
+    it 'returns 30 when passed "B"' do
+      expect(shop.checkout('B')).to eq 30
+    end
+  end
 end
