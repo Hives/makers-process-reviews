@@ -1,5 +1,6 @@
 class Shop
   def checkout(items)
+    return -1 unless items.is_a?(String)
     return -1 if items.upcase != items
 
     price = 0
