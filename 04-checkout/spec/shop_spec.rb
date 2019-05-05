@@ -54,4 +54,10 @@ describe Shop do
       expect(shop.checkout('DD')).to eq 30
     end
   end
+
+  context 'Acceptance tests' do
+    it 'returns 115 when passed "ABCD"' do
+      expect(shop.checkout('ABCD')).to eq 115
+    end
+  end
 end
