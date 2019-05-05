@@ -1,4 +1,4 @@
 class Shop
-  def checkout
+  def checkout(items)
   end
 end
