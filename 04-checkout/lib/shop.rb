@@ -1,9 +1,6 @@
 class Shop
   def checkout(items)
-    if items.length > 2
-      50 * items.length - 20
-    else
-      50 * items.length
-    end
+    discount = 20 * (items.length/3)
+    50 * items.length - discount
   end
 end

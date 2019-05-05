@@ -14,4 +14,12 @@ describe Shop do
   it 'returns 130 when passed "AAA"' do
     expect(shop.checkout('AAA')).to eq 130
   end
+
+  it 'returns 180 when passed "AAAA"' do
+    expect(shop.checkout('AAAA')).to eq 180
+  end
+
+  it 'returns 260 when passed "AAAAAA"' do
+    expect(shop.checkout('AAAAAA')).to eq 260
+  end
 end
