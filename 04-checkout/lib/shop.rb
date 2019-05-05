@@ -1,5 +1,7 @@
 class Shop
   def checkout(items)
+    return -1 if items.upcase != items
+
     price = 0
     a_count = items.count('A')
     b_count = items.count('B')
