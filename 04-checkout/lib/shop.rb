@@ -8,6 +8,8 @@ class Shop
       30 * items.length - discount
     elsif items[0] == 'C'
       20 * items.length
+    else
+      15 * items.length
     end
   end
 end

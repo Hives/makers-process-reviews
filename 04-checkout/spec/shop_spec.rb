@@ -44,4 +44,14 @@ describe Shop do
       expect(shop.checkout('CC')).to eq 40
     end
   end
+
+  context 'Lots of "D"s' do
+    it 'returns 15 when passed "D"' do
+      expect(shop.checkout('D')).to eq 15
+    end
+
+    it 'returns 30 when passed "DD"' do
+      expect(shop.checkout('DD')).to eq 30
+    end
+  end
 end
