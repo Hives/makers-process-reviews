@@ -63,5 +63,9 @@ describe Shop do
     it 'returns -1 when passed "aBc"' do
       expect(shop.checkout('aBc')).to eq -1
     end
+
+    it 'returns -1 when passed "-B8x"' do
+      expect(shop.checkout('-B8x')).to eq -1
+    end
   end
 end
