@@ -1,5 +1,5 @@
 class Quiz
   def run
-    puts "Hello"
+    puts "What is the capital of France?"
   end
 end
