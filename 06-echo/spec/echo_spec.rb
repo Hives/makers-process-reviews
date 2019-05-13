@@ -1,22 +1,25 @@
+require 'timecop'
 require 'echo'
 
 describe Echo do
   describe '#run' do
     before do
-      allow(Kernel).to receive(:puts).with(anything())
+      @kernel = double(:kernel)
+      @echo = Echo.new(@kernel)
+      allow(@kernel).to receive(:gets).and_return("a string")
+      allow(@echo).to receive(:puts)
     end
 
     it 'prints out "Say something:"' do
-      echo = Echo.new
-      expect(Kernel).to receive(:puts).with("Say something:")
-      echo.run
+      expect(@echo).to receive(:puts).with("Say something:")
+      @echo.run
     end
 
     it 'gets input from user and prints it back' do
-      echo = Echo.new
-      allow(Kernel).to receive(:gets).and_return("hello, world")
-      expect(Kernel).to receive(:puts).with("hello, world")
-      echo.run
+      allow(@kernel).to receive(:gets).and_return("hello, world")
+      Timecop.freeze(Time.local(2019, 05, 12, 16, 34))
+      expect(@echo).to receive(:puts).with("2019-05-12 | 16:34 | 'hello, world'!")
+      @echo.run
     end
   end
 end

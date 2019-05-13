@@ -1,7 +1,14 @@
 class Echo
+  def initialize(kernel = Kernel)
+    @kernel = kernel
+  end
+
   def run
-    Kernel.puts "Say something:"
-    Kernel.puts "hello, world"
+    puts "Say something:"
+    input = @kernel.gets
+    input = input.chomp
+    datetime = Time.new
+    puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
   end
 end
 
