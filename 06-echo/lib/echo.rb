@@ -1,6 +1,7 @@
 class Echo
   def run
     Kernel.puts "Say something:"
+    Kernel.puts "hello, world"
   end
 end
 
