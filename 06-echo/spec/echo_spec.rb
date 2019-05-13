@@ -21,5 +21,12 @@ describe Echo do
       expect(@echo).to receive(:puts).with("2019-05-12 | 16:34 | 'hello, world'!")
       @echo.run
     end
+
+    it 'gets input and prints it back twice' do
+      allow(@kernel).to receive(:gets).and_return "hello, world", "hello again"
+      Timecop.freeze(Time.local(2019, 05, 12, 16, 34))
+      expect(@echo).to receive(:puts).with("2019-05-12 | 16:34 | 'hello again'!")
+      @echo.run
+    end
   end
 end

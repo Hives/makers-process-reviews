@@ -5,8 +5,10 @@ class Echo
 
   def run
     puts "Say something:"
-    input = @kernel.gets
-    input = input.chomp
+    input = @kernel.gets.chomp
+    datetime = Time.new
+    puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
+    input = @kernel.gets.chomp
     datetime = Time.new
     puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
   end
