@@ -6,11 +6,13 @@ class Echo
   def run
     puts "Say something:"
     input = @kernel.gets.chomp
-    datetime = Time.new
-    puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
-    input = @kernel.gets.chomp
-    datetime = Time.new
-    puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
+    while input != "exit"
+      datetime = Time.new
+      puts "#{datetime.strftime("%Y-%m-%d | %H:%M")} | '#{input}'!"
+      input = @kernel.gets.chomp
+    end
+    puts "Goodbye!"
+    @kernel.exit
   end
 end
 
