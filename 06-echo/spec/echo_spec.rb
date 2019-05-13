@@ -7,5 +7,10 @@ describe Echo do
       expect(Kernel).to receive(:puts).with("Say something:")
       echo.run
     end
+
+    xit 'gets input from user and prints it back' do
+      echo = Echo.new
+
+    end
   end
 end
